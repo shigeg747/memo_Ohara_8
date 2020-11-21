@@ -1,0 +1,254 @@
+@charset "utf-8";
+html{
+    font-size: 62.5%;/* 16px * 62.5% = 10px */
+}
+
+body{
+    background-color: #b4ada9;
+}
+
+/* ------ ハンバーガー ------ */
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+  header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #1a100b;
+  }
+  #nav{
+    position: absolute;
+    height: 100vh;
+    width: 20%;
+    left: -20%;
+    top: 0;
+    background: #ffffff;
+    transition: .7s;
+  }
+  #nav ul{
+    padding-top: 80px;
+  }
+  #nav ul li{
+    list-style-type: none;
+    font-size: 1.6rem;
+  }
+  #nav a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    /* margin: 0 15px; */
+    padding: 10px 0;
+    transition: .5s;
+  }
+  #nav li a:hover{
+    color: #ffffff;
+    background: #080747;
+    border-bottom: none;
+  }
+  #hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .inner_line {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #ffffff;
+    transition: 1s;
+    border-radius: 4px;
+  }
+  #line1 {
+    top: 0;
+  }
+  #line2 {
+    top: 14px;
+  }
+  #line3 {
+    bottom: 0px;
+  }
+  h1, h2 {
+    text-align: center;
+    line-height: 9rem;
+    color: #ffffff;
+  }
+  /* h2 {
+    display: none;
+  } */
+  p {
+    padding-top: 200px;
+    text-align: center;
+  }
+  .in{
+    transform: translateX(100%);
+  }
+  .line_1,.line_2,.line_3{
+    background: #000000;
+  }
+  .line_1 {
+    transform: translateY(15px) rotate(-45deg);
+    top: 0;
+  }
+  .line_2 {
+    opacity: 0;
+  }
+  .line_3 {
+    transform: translateY(-15px) rotate(45deg);
+    bottom: 0;
+  }
+  
+  /* @media screen and (max-width: 480px) {
+    #nav ul li {
+      font-size: 14px;
+    }
+    h1 {
+      display: none;
+    }
+    h2 {
+      display: block;
+      font-size: 14px;
+    }
+  } */
+
+/* ------ ハンバーガー ------ */
+
+
+/* ------ コンテナー ------ */
+
+.space{
+    height: 100px;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color:#fff;
+    width: 340px;
+    height: 100%;
+}
+
+/* ------ コンテナー ------ */
+
+/* ------ テキスト ------ */
+
+.htitle{
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0 0 0 ;
+}
+.date{
+    box-sizing: border-box;
+    width: 340px;
+    height: 30px;
+    border-bottom: 80% 1px ;
+    padding: 10px 0px 0 15px;
+    font-size: 1.2rem;
+    background-color: #080747;
+    color: rgb(186, 186, 186);
+    cursor: pointer;
+}
+
+/* テキストエリア横幅は固定できない？ */
+h3{
+    /* box-sizing: border-box; */
+    width: 100%;
+    height: 30px;
+    font-size: 10rem;
+    padding: 9px 10px;
+}
+
+.title{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-size: 2.2rem;
+    line-height: 1.5em;
+    /* font-weight: bold; */
+    padding: 10px 40px 0px;
+    border: none;
+
+}
+
+.text_area{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2em;
+    text-align: justify ;
+    box-sizing: border-box;
+    width: 100%;
+    height: 260px;
+    padding: 10px 40px;
+    border: none;
+
+}
+
+.text-centre{
+    box-sizing: border-box;
+
+    display: inline-block;
+    width: 340px;
+    text-align: center;
+}
+
+/* ------ テキスト ------ */
+
+
+ul {
+    table-layout: fixed;
+    width: 100%;
+    font-size: 1.4rem;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+#btn{
+    display: flex;
+    text-decoration: none;
+}
+
+.btn{
+    /* list-style-type: none; */
+    text-decoration: none;
+    /* display: table-cell; */
+    /* 定義 */
+    width: 50%;
+    cursor: pointer;
+    padding: 10px;
+    /* border: 1px solid rgb(152, 152, 152); */
+    margin: 0   auto;
+    transition: .3s;
+    color: #4d4d4d;
+    background-color: #f3f3f3;
+}
+
+li:hover {
+    background: #080747;
+    color: #fff;
+}
+
+
+.margin_centre{
+    margin: 0 auto;
+}
+
+
+
+
